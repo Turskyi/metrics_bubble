@@ -14,6 +14,10 @@ assessment.
 
 • Interface: [Flutter](https://flutter.dev/docs/development/ui);
 
+• Architectural pattern: [MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter);
+
+• State management approach: [Provider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple);
+
 • Fonts: The label is Helvetica. The weight and unit
 are [League Gothic](https://www.theleagueofmoveabletype.com/league-gothic).
 
