@@ -1,0 +1,57 @@
+name: metrics_bubble
+description: Metrics bubble UI Coding Challenge Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+  # display svg images
+  flutter_svg: ^0.22.0
+
+# Generates image provider from svg path, uses flutter_svg as a dependency.
+  flutter_svg_provider: ^0.1.10
+
+  #  add  ChangeNotifierProvider and Consumer for implementing MVP structural design pattern
+  provider: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The set of rules follows the Effective Dart: Style Guide.
+  lint: ^1.5.3
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # assets of the application
+  assets:
+    #    picture files
+    - assets/images/
+
+  # Adds custom fonts to the application.
+  # Each entry in this list has a "family" key with the font family name and a "fonts" key with
+  #  a list giving the asset and other descriptors for the font.
+  fonts:
+    - family: Helvetica
+      fonts:
+        - asset: assets/fonts/Helvetica.ttf
+
+    - family: League Gothic
+      fonts:
+        - asset: assets/fonts/LeagueGothicRegular.ttf
