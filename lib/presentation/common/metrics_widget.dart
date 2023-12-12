@@ -38,16 +38,30 @@ class MetricsWidget extends StatelessWidget {
      * on Android platform,
      * so for that case we use regular [Stack] and [SvgPicture] on top */
     if (kIsWeb) {
-      return _buildWebVersion();
+      /* NOTE: to create really responsive design for web version,
+       * it is better to have different [bubbleDiameter] to change it
+       * depending on width and height of the screen */
+      return _MetricsWidgetWeb(label: label, weight: weight, unit: unit);
     } else {
-      return _buildMobileVersion();
+      return _MetricsWidgetMobile(label: label, weight: weight, unit: unit);
     }
   }
+}
 
-  /* NOTE: to create really responsive design for web version,
-  * it is better to have different [bubbleDiameter] to change it
-  * depending on width and height of the screen */
-  Widget _buildWebVersion() {
+class _MetricsWidgetWeb extends StatelessWidget {
+  const _MetricsWidgetWeb({
+    Key? key,
+    required this.label,
+    required this.weight,
+    required this.unit,
+  }) : super(key: key);
+
+  final String label;
+  final int weight;
+  final String unit;
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
       height: AppStyles.bubbleDiameter,
       width: AppStyles.bubbleDiameter,
@@ -95,8 +109,22 @@ class MetricsWidget extends StatelessWidget {
       ),
     );
   }
+}
 
-  Widget _buildMobileVersion() {
+class _MetricsWidgetMobile extends StatelessWidget {
+  const _MetricsWidgetMobile({
+    Key? key,
+    required this.label,
+    required this.weight,
+    required this.unit,
+  }) : super(key: key);
+
+  final String label;
+  final int weight;
+  final String unit;
+
+  @override
+  Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
         Container(
@@ -119,7 +147,7 @@ class MetricsWidget extends StatelessWidget {
                 ),
               ),
               /* NOTE: font has default vertical paddings which are bigger than
-            * required by design, to cut bottom padding we use [SizedBox] height,
+           * required by design, to cut bottom padding we use [SizedBox] height,
             * and [TextStyle] height to cut top padding */
               SizedBox(
                 height: 124,
