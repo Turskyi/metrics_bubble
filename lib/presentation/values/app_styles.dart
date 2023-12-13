@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:metrics_bubble/presentation/common/metrics_widget.dart';
 
 /// Util class containing commonly used [Widget] styles
@@ -16,7 +15,7 @@ class AppStyles {
         offset: Offset(0, 27),
         blurRadius: 33,
         color: Color(0x3827ae96),
-      )
+      ),
     ],
   );
 

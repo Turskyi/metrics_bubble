@@ -147,8 +147,8 @@ class _MetricsWidgetMobile extends StatelessWidget {
                 ),
               ),
               /* NOTE: font has default vertical paddings which are bigger than
-           * required by design, to cut bottom padding we use [SizedBox] height,
-            * and [TextStyle] height to cut top padding */
+               * required by design, to cut bottom padding we use [SizedBox]
+               * height, and [TextStyle] height to cut top padding */
               SizedBox(
                 height: 124,
                 child: Text(
@@ -162,10 +162,9 @@ class _MetricsWidgetMobile extends StatelessWidget {
         ),
         SvgPicture.asset(
           'assets/images/graph.svg',
-          color: const Color(0xffffffff),
           width: AppStyles.bubbleDiameter,
           height: AppStyles.bubbleDiameter * 1.75,
-        )
+        ),
       ],
     );
   }

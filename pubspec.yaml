@@ -16,20 +16,20 @@ dependencies:
     sdk: flutter
 
   # display svg images
-  flutter_svg: ^0.22.0
+  flutter_svg: ^2.0.9
 
-# Generates image provider from svg path, uses flutter_svg as a dependency.
-  flutter_svg_provider: ^0.1.10
+  # Generates image provider from svg path, uses flutter_svg as a dependency.
+  flutter_svg_provider: ^1.0.6
 
   #  add  ChangeNotifierProvider and Consumer for implementing MVP structural design pattern
-  provider: ^5.0.0
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   # The set of rules follows the Effective Dart: Style Guide.
-  lint: ^1.5.3
+  lint: ^2.2.0
 
 # The following section is specific to Flutter.
 flutter:

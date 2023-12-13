@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:metrics_bubble/presentation/common/metrics_widget.dart';
 import 'package:metrics_bubble/presentation/values/app_styles.dart';
 import 'package:metrics_bubble/presentation/views/demo/demo_view_model.dart';
